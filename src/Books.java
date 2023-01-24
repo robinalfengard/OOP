@@ -1,8 +1,8 @@
 public class Books {
-    public String title;
-    public String author;
+    private String title;
+    private String author;
 
-    int price;
+    private int price;
     public void setTitle(String title) {
         this.title = title;
     }
@@ -27,7 +27,9 @@ public class Books {
         return price;
     }
 
-
+    private void printInfoBook(){
+        System.out.println("Book Title: " + getTitle() + "\nAuthor: " + getAuthor() + "\n Price: " + getPrice() );
+    }
 
 
     }

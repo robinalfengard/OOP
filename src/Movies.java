@@ -1,9 +1,9 @@
 import java.rmi.MarshalledObject;
 
 public class Movies {
-    String title;
-    MovieGenres genre;
-
+   private String title;
+   private MovieGenres genre;
+    private int  price;
     public void setTitle(String title) {
         this.title = title;
     }
@@ -28,6 +28,9 @@ public class Movies {
         return price;
     }
 
-    int price;
+
+    private void printInfoMovie(){
+        System.out.printf("Movie Title: %s \nAuthor: %s  \n Price: %d", getTitle(), getGenre(), getPrice());
+    }
 
 }

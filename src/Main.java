@@ -25,20 +25,11 @@ public class Main {
         moovieShelf[0] = movie1;
         moovieShelf[1] = movie2;
 
-        for (Books book : bookShelf) {
-            printInfoBook(book);
-        }
 
 
-        for (int i = 0; i<moovieShelf.length; i++){
-            printInfoMovie(moovieShelf[i]);
-        }
+
     }
 
-    private static void printInfoBook(Books book){
-        System.out.println("Book Title: " + book.getTitle() + "\nAuthor: " + book.getAuthor() + "\n Price: " + book.getPrice() );
-    }
-    static void printInfoMovie(Movies movie){
-        System.out.printf("Movie Title: %s \nAuthor: %s  \n Price: %d", movie.getTitle(), movie.getGenre(), movie.getPrice());
-    }
+
+
 }
