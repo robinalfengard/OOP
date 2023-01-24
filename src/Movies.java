@@ -3,6 +3,11 @@ public class Movies {
    private String title;
    private MovieGenres genre;
     private int  price;
+
+    public void printInfoMovie(Movies movie){
+        System.out.printf("Movie Title: %s \nAuthor: %s  \n Price: %d", this.title, this.genre, this.price);
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -28,8 +33,6 @@ public class Movies {
     }
 
 
-    private void printInfoMovie(){
-        System.out.printf("Movie Title: %s \nAuthor: %s  \n Price: %d", getTitle(), getGenre(), getPrice());
-    }
+
 
 }

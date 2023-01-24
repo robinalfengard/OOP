@@ -3,6 +3,11 @@ public class Books {
     private String author;
 
     private int price;
+
+    public void printBookInfo(){
+        System.out.println("Book Title: " + this.title + "\nAuthor: " + this.author + "\n Price: " + this.price );
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -27,9 +32,7 @@ public class Books {
         return price;
     }
 
-    private void printInfoBook(){
-        System.out.println("Book Title: " + getTitle() + "\nAuthor: " + getAuthor() + "\n Price: " + getPrice() );
-    }
+
 
 
     }

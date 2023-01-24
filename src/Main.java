@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+        Movies moviesObj = new Movies();
+
         Books[] bookShelf = new Books[2];
         Movies[] moovieShelf = new Movies[2];
         Books book1 = new Books();
@@ -24,6 +26,10 @@ public class Main {
         movie2.setPrice(150);
         moovieShelf[0] = movie1;
         moovieShelf[1] = movie2;
+
+        for(Movies movie : moovieShelf){
+            moviesObj.printInfoMovie(movie);
+        }
 
 
 
