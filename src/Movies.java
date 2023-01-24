@@ -1,4 +1,3 @@
-import java.rmi.MarshalledObject;
 
 public class Movies {
    private String title;
